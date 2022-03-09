@@ -20,7 +20,7 @@ fs.readFile("./record.txt", "utf8", function (err, dataStr) {
   // 5.调用fs.writeFile 把数据写入
   fs.writeFile("./record-ok.txt", newStr, function (err) {
     if (err) {
-      return console.log("写入文件失败！" + err.message);
+      return console.log("文件写入失败！" + err.message);
     }
 
     console.log("成绩写入成功！");
