@@ -12,8 +12,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/user", (req, res) => {
-  res.send("User page");
+app.get("/", (req, res) => {
+  res.send("Home page");
 });
 
 app.listen(80, () => {
